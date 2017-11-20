@@ -4,8 +4,10 @@ function Calculator(skinName) {
 
 Calculator.prototype.pingPong = function (goal) {
   var output = [];
-  for (var i = 0; i < goal; i++) {
-    if (i % 15 === 0) {
+  for (var i = 0; i <= goal; i++) {
+    if (i === 0) {
+      output.push(i);
+    } else if (i % 15 === 0) {
       output.push("ping-pong");
     } else if (i % 3 === 0) {
       output.push("ping");
