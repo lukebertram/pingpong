@@ -1,4 +1,4 @@
-//front-side heel-mash nollie nosebone
+var Calculator = require('./../js/pingpong.js').calculatorModule;
 $(function(){
   $('#ping-pong-form').submit(function(event) {
     event.preventDefault();
